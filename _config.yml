@@ -101,7 +101,7 @@ ignore:
 theme: cupertino
 
 plugins:
-  hexo-generator-feed
+  - hexo-generator-feed
 
 #Feed Atom
 feed:
