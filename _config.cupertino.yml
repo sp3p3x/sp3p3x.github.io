@@ -1,0 +1,75 @@
+# insertions:
+#   head:
+# TODO: add umami and openpanel or any other tracking
+
+hero:
+  title: sp3p3x
+  description:
+
+hero_exit_while_scrolling:
+  enabled: false
+  blur_filter: false
+
+nav_blur_gradient: false  
+smooth_scroll: true
+
+nav:
+  title: sp3p3x's blog
+  items:
+    - name: Blog
+      url: /archives
+    # - name: Friends
+    #   url: /friends
+    - name: Projects
+      url: /projects
+    - name: About
+      url: /about
+    - name: <i class="si si-github"></i>
+      is_icon: true
+      url: https://github.com/sp3p3x
+    - name: <i class="si si-discord"></i>
+      is_icon: true
+      url: https://discordapp.com/users/sp3p3x
+    - name: <i class="bi bi-search"></i>
+      is_icon: true
+      url: /search
+
+footer:
+  - group_name: Blog
+    items:
+      - name: Home
+        url: /
+      - name: Posts
+        url: /archives
+      - name: Tags
+        url: /tags
+      - name: Categories
+        url: /categories
+      - name: Search
+        url: /search
+      # - name: Friends
+      #   url: /friends
+      - name: Projects
+        url: /projects
+      - name: Resume
+        url: /resume
+      - name: About
+        url: /about
+      - name: RSS
+        url: /atom.xml
+  - group_name: Projects
+    items:
+      - name: bi0s stats app
+        url: https://github.com/sp3p3x/bi0s_stats
+  - group_name: Me
+    items:
+      - name: GitHub
+        url: https://github.com/sp3p3x
+      - name: Discord
+        url: https://discordapp.com/users/sp3p3x
+      - name: Email
+        url: mailto:yadhukk12345@gmail.com
+
+search: true
+
+favicon: /favicon.png
