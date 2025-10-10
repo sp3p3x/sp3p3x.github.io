@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 6px;
-  $paddingY: 25%;
+  $paddingY: 33%;
   padding-top: $paddingY;
   padding-bottom: $paddingY;
   white-space: pre-wrap;
@@ -36,7 +36,7 @@
           opacity: 0;
           margin-top: calc(var(--range) + 56px);
           margin-bottom: calc(-1 * var(--range));
-          scale: 0.9;
+          // scale: 0.9;
         }
       }
 
@@ -58,14 +58,26 @@
     font-size: 100px;
     color: whitesmoke;
     font-weight: 600;
-    // margin: 100;
+    margin-bottom: 0px;
+    margin-top: 0px;
     transition: font-size 0.5s;
   }
 
   .description {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: normal;
+    color: whitesmoke;
+    font-weight: 100;
     margin: 0;
     transition: font-size 0.5s;
   }
+}
+
+.hero-contents {
+  position: fixed;
+  z-index: 0;
+}
+
+.section-title {
+  z-index: 999 !important;
 }

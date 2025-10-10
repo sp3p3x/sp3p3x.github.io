@@ -4,10 +4,10 @@
 
 hero:
   title: sp3p3x
-  description:
+  description: Yadhu Krishna K
 
 hero_exit_while_scrolling:
-  enabled: false
+  enabled: true
   blur_filter: false
 
 nav_blur_gradient: false  
@@ -16,7 +16,7 @@ smooth_scroll: true
 nav:
   title: sp3p3x's blog
   items:
-    - name: Blog
+    - name: Posts
       url: /archives
     # - name: Friends
     #   url: /friends
@@ -61,6 +61,8 @@ footer:
     items:
       - name: bi0s stats app
         url: https://github.com/sp3p3x/bi0s_stats
+      - name: View projects page
+        url: /projects
   - group_name: Me
     items:
       - name: GitHub
@@ -71,5 +73,5 @@ footer:
         url: mailto:yadhukk12345@gmail.com
 
 search: true
-
+show_color_scheme_toggle: false
 favicon: /favicon.png

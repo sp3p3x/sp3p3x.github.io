@@ -21,6 +21,7 @@ nav {
     background-color: var(--color-background-secondary-translucent);
     backdrop-filter: var(--filter-blur);
   }
+
   .inner {
     max-width: 980px;
     margin: auto;
@@ -99,6 +100,7 @@ nav {
       }
 
       .nav-arrow {
+
         &::before,
         &::after {
           content: '';
@@ -143,10 +145,9 @@ nav {
           transform: translate(0, -10%);
           opacity: 0;
 
-          transition:
-            transform 0.4s,
-            opacity 0.4s,
-            color 0.5s;
+          transition: transform 0.4s,
+          opacity 0.4s,
+          color 0.5s;
 
           &.is-icon {
             display: inline-flex;
@@ -170,6 +171,7 @@ nav {
       }
 
       .nav-arrow {
+
         &::before,
         &::after {
           top: 16px;
@@ -202,12 +204,13 @@ nav {
   }
 }
 
-.nav-mask > [order] {
+.nav-mask>[order] {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--color-background-primary-translucent);
+  // background-color: var(--color-background-primary-translucent);
+  background-color: #00000095;
   backdrop-filter: blur(10px);
   mask-image: linear-gradient(to bottom, #000, transparent);
   mask-composite: destination-in;
@@ -223,6 +226,7 @@ nav {
 
   --height: 100px;
   $base: 1.2;
+
   @for $i from 1 through 6 {
     &[order='#{$i}'] {
       height: calc(var(--height) / math.pow(($base), ($i - 1)));

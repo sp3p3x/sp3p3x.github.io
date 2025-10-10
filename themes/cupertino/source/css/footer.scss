@@ -1,9 +1,12 @@
 footer {
-  background-color: var(--color-background-underlying);
+  // background-color: var(--color-background-underlying);
+  background-color: #000000c0;
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
   border-top: 1px solid var(--color-border-primary);
   user-select: none;
 
-  & > .inner {
+  &>.inner {
     max-width: 980px;
     margin: auto;
     padding: 32px 16px;
@@ -64,7 +67,7 @@ footer {
         height: 0px;
         margin: 0;
 
-        &:checked + span {
+        &:checked+span {
           color: var(--color-background-accent-contrast);
           background-color: var(--color-background-accent);
         }
