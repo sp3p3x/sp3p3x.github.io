@@ -1,0 +1,104 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding-top: 30%;
+  padding-bottom: 30%;
+  white-space: pre-wrap;
+}
+@supports (animation-timeline: scroll()) {
+  .hero.exit-while-scroll {
+    --range: calc(var(--current-hero-height) * 0.5px);
+  }
+  @keyframes hero-exit-with-blur {
+    0% {
+      margin-top: 56px;
+    }
+    100% {
+      opacity: 0;
+      margin-top: calc(var(--range) + 56px);
+      margin-bottom: calc(-1 * var(--range));
+      scale: 0.9;
+      filter: var(--filter-blur);
+    }
+  }
+  @keyframes hero-exit {
+    0% {
+      margin-top: 56px;
+    }
+    100% {
+      opacity: 0;
+      margin-top: calc(var(--range) + 56px);
+      margin-bottom: calc(-1 * var(--range));
+    }
+  }
+  .hero.exit-while-scroll {
+    will-change: filter, margin-top, margin-bottom, opacity, scale;
+    animation-name: hero-exit;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: 0 var(--range);
+    transform-origin: left -100%;
+  }
+  .hero.exit-while-scroll.with-blur {
+    animation-name: hero-exit-with-blur;
+  }
+}
+.hero .title {
+  font-size: 100px;
+  color: whitesmoke;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  transition: font-size 0.5s;
+}
+.hero .description {
+  font-size: 28px;
+  font-weight: normal;
+  color: whitesmoke;
+  font-weight: 100;
+  margin: 0;
+  transition: font-size 0.5s;
+}
+
+.hero-contents {
+  position: fixed;
+  z-index: 0;
+}
+
+.section-title {
+  z-index: 999 !important;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 50%;
+    padding-bottom: 50%;
+    white-space: normal;
+  }
+  .hero .title {
+    font-size: 80px;
+  }
+  .hero.exit-while-scroll {
+    animation: none !important;
+    filter: none !important;
+    transition: none;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 50%;
+    padding-bottom: 50%;
+    white-space: normal;
+  }
+  .hero .title {
+    font-size: 80px;
+  }
+  .hero.exit-while-scroll {
+    animation: none !important;
+    filter: none !important;
+    transition: none;
+  }
+}
