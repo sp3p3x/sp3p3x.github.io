@@ -41,18 +41,14 @@ footer:
         url: /
       - name: Posts
         url: /archives
-      - name: Tags
-        url: /tags
       - name: Categories
         url: /categories
+      - name: Tags
+        url: /tags
       - name: Search
         url: /search
       # - name: Friends
       #   url: /friends
-      - name: Projects
-        url: /projects
-      - name: Resume
-        url: /resume
       - name: About
         url: /about
       - name: RSS
@@ -61,10 +57,14 @@ footer:
     items:
       - name: bi0s stats app
         url: https://github.com/sp3p3x/bi0s_stats
-      - name: View projects page
+      - name: More projects
         url: /projects
   - group_name: Me
     items:
+      - name: Resume
+        url: /resume
+      - name: Projects
+        url: /projects
       - name: GitHub
         url: https://github.com/sp3p3x
       - name: Discord
