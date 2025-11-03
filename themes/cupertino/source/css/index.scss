@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 6px;
-  $paddingY: 33%;
+  $paddingY: 30%;
   padding-top: $paddingY;
   padding-bottom: $paddingY;
   white-space: pre-wrap;
@@ -40,7 +40,11 @@
         }
       }
 
-      will-change: filter, margin-top, margin-bottom, opacity, scale;
+      will-change: filter,
+      margin-top,
+      margin-bottom,
+      opacity,
+      scale;
       animation-name: hero-exit;
       animation-timing-function: linear;
       animation-fill-mode: both;
@@ -48,9 +52,9 @@
       animation-range: 0 var(--range);
       transform-origin: left -100%;
 
-      // &.with-blur {
-      //   animation-name: hero-exit-with-blur;
-      // }
+      &.with-blur {
+        animation-name: hero-exit-with-blur;
+      }
     }
   }
 
@@ -80,4 +84,44 @@
 
 .section-title {
   z-index: 999 !important;
+}
+
+// tablets
+@media (max-width: 768px) {
+  .hero {
+    $paddingY: 50%;
+    padding-top: $paddingY;
+    padding-bottom: $paddingY;
+    white-space: normal;
+
+    .title {
+      font-size: 80px;
+    }
+  }
+
+  .hero.exit-while-scroll {
+    animation: none !important;
+    filter: none !important;
+    transition: none;
+  }
+}
+
+// mobile phones
+@media (max-width: 480px) {
+  .hero {
+    $paddingY: 50%;
+    padding-top: $paddingY;
+    padding-bottom: $paddingY;
+    white-space: normal;
+
+    .title {
+      font-size: 80px;
+    }
+  }
+
+  .hero.exit-while-scroll {
+    animation: none !important;
+    filter: none !important;
+    transition: none;
+  }
 }
