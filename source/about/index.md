@@ -6,7 +6,7 @@ no_about: true
 no_toc: true
 ---
 
-Hello there! I am Yadhu Krishna K (a.k.a *sp3p3x*). I'm a Final Year undergraduate student from Amrita Vishwa Vidyapeetham, Amritapuri, pursuing Artifial Intelligence Engineering.
+Hello there 👋 I am Yadhu Krishna K (a.k.a *sp3p3x*), a Final Year undergraduate student from Amrita Vishwa Vidyapeetham, Amritapuri, pursuing Artifial Intelligence Engineering.
 
 I'm also a CTF player and Lead of the [bi0s](https://bi0s.in) DFIR team. My areas of interests are DFIR, Malware Research, Threat Hunting and Tool Development. You can checkout some of my projects over on my [github page](https://github.com/sp3p3x).
 
