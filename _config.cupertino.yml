@@ -10,7 +10,7 @@ hero_exit_while_scrolling:
   enabled: true
   blur_filter: false
 
-nav_blur_gradient: false  
+nav_blur_gradient: false
 smooth_scroll: true
 
 nav:
@@ -69,6 +69,8 @@ footer:
         url: https://github.com/sp3p3x
       - name: Discord
         url: https://discordapp.com/users/sp3p3x
+      - name: LinkedIn
+        url: https://www.linkedin.com/in/sp3p3x
       - name: Email
         url: mailto:yadhukk12345@gmail.com
 
